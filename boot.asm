@@ -15,6 +15,7 @@ ch_loop:lodsb
 hang:
     jmp hang
 
+msg     db 'Hello World', 13, 10, 0
     times 510-($-$$) db 0
     db 0x55
     db 0xAA
